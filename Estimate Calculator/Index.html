@@ -1,0 +1,64 @@
+<p style ="text-align: center;">
+    Enter your numbers to generate an estimate for your project!
+</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estimate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Estimate Calculator</h2>
+
+<label>
+    Square Feet:
+    <input type="number" id="sqftInput">
+</label>
+
+<br><br>
+
+<label>
+    Material Type:
+    <select id="materialSelect">
+        <option value="0">Standard</option>
+        <option value="0.15">Premium (+15%)</option>
+        <option value="0.30">Luxury (+30%)</option>
+    </select>
+</label>
+
+<br><br>
+
+<label>
+    Price per Square Foot:
+    <input type="number" id="priceInput">
+</label>
+
+<br><br>
+
+</label>
+    Tax Percentage:
+    <input type="number" id="taxInput" placeholder="Example: 6">
+</label>
+
+<br><br>
+
+<button id="calculateBtn" type="button">Calculate Estimate </button>
+
+<p id="result"></p>
+    
+<button id="saveBtn" type="button">Save Estimate</button>
+    
+<div id="savedEstimates"></div>
+
+<br><br>
+
+<button id="clearSavedBtn" type="button">Clear Saved Estimates</button>
+
+<br><br>
+
+<script src="script.js"></script>
+</body>
+</html>
